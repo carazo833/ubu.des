@@ -1,12 +1,11 @@
 #cloud-config
+#cloud-config
 autoinstall:
   version: 1
-
-
   locale: es_ES.UTF-8
   keyboard:
     layout: es
-  timezone: Europe/Rome
+  timezone: Europe/Madrid
 
   network:
     version: 2
@@ -16,12 +15,5 @@ autoinstall:
 
   identity:
     username: usuario
-    hostname: linuxconfig
-    password: '$6$rounds=4096$DCTPb7hr1$1G8jLh6X8u6aIGGKExCpLkhVVn6f.Fn3ixRxqE2jv/8C2EYf7GfA92KEDk6A/kzWpgqgNjvld/vDckuZjI6F/'
-
-  packages:
-    - git
-    - python3-pip
-
-
-  shutdown: reboot
+    hostname: usuarioubuntu
+    password: 'usuario'
